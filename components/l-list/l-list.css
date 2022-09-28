@@ -1,0 +1,8 @@
+.l-list {
+    list-style-type: none;
+}
+.l-list__item {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,1 +1,76 @@
 /* Стилизация кнопки */
+.c-button {
+    height: 3rem;
+    width: 11.375rem;
+    border-radius: 0.5rem;
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    /* identical to box height */
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Primary */
+/*--------------------------------------------------------------------------------------------------------------------*/
+.c-button-primary-default {
+    background: #4263EB;
+    color: var(--white);
+}
+
+.c-button-primary-default:hover, .c-button-primary-default:active  {
+    background: #2342C0;
+}
+
+.c-button-primary-disabled {
+    background: #2342C0;
+    color: var(--white);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/* Secondary*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+.c-button-secondary-default {
+    background: #7048E8;
+    color: var(--white);
+}
+
+.c-button-secondary-default:hover, .c-button-secondary-default:active {
+    background: #5028C6;
+}
+
+.c-button-secondary-disabled {
+    background: #7048E8;
+    color: var(--white);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/* Alternate */
+/*--------------------------------------------------------------------------------------------------------------------*/
+.c-button-alternate-default {
+    border: 1px solid #ACB5BD;
+    color: #495057;
+    background: var(--white);
+}
+
+.c-button-alternate-default:hover, .c-button-alternate-default:active {
+    color: #495057;
+    border: 1px solid #212429;
+}
+
+.c-button-alternate-disabled {
+    color: #495057;
+    background: var(--white);
+    border: 1px solid #ACB5BD;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/

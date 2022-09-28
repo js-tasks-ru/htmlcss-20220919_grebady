@@ -2,6 +2,8 @@
 @import "sanitize.css";
 @import '../fonts/fonts.css';
 
+@import "../../components/l-container/l-container.css";
+@import "../../components/l-list/l-list.css";
 :root {
     --white: #ffffff;
     --black: #212429;
