@@ -23,6 +23,7 @@
 .c-button_primary {
     background: var(--primary);
     color: var(--white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .c-button_primary:hover, .c-button_primary:active  {
@@ -35,6 +36,7 @@
 .c-button_secondary {
     background: var(--secondary);
     color: var(--white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .c-button_secondary:hover, .c-button_secondary:active {
@@ -48,6 +50,7 @@
     border: 1px solid var(--grey-3);
     color: var(--grey-4);
     background: var(--white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out, border 200ms ease-in-out;
 }
 
 .c-button_alternate:hover, .c-button_alternate:active {
