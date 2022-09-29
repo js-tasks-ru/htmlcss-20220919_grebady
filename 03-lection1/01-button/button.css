@@ -1,1 +1,60 @@
 /* Стилизация кнопки */
+.c-button {
+    padding: 0.875rem 3.3125rem;
+    border-radius: 0.5rem;
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    /* identical to box height */
+    text-align: center;
+    cursor: pointer;
+}
+.c-button:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Primary */
+/*--------------------------------------------------------------------------------------------------------------------*/
+.c-button_primary {
+    background: var(--primary);
+    color: var(--white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.c-button_primary:hover, .c-button_primary:active  {
+    background: var(--primary-hover);
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/* Secondary*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+.c-button_secondary {
+    background: var(--secondary);
+    color: var(--white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.c-button_secondary:hover, .c-button_secondary:active {
+    background: var(--secondary-hover);
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/* Alternate */
+/*--------------------------------------------------------------------------------------------------------------------*/
+.c-button_alternate {
+    border: 1px solid var(--grey-3);
+    color: var(--grey-4);
+    background: var(--white);
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out, border 200ms ease-in-out;
+}
+
+.c-button_alternate:hover, .c-button_alternate:active {
+    color: var(--grey-4);
+    border: 1px solid var(--black);
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
