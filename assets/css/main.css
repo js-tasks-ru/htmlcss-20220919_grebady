@@ -1,6 +1,13 @@
 @import "html5reset-1.6.1.css";
 @import "sanitize.css";
 @import '../fonts/fonts.css';
+@import "../../components/c-logo/c-logo.css";
+@import "../../components/c-page/c-page.css";
+@import "../../components/l-container/l-container.css";
+@import "../../components/c-header/c-header.css";
+@import "../../components/c-top/c-top.css";
+@import "../../components/c-preview/c-preview.css";
+@import "../../components/c-footer/c-footer.css";
 
 :root {
     --white: #ffffff;
