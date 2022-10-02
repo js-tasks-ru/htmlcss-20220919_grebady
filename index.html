@@ -2,6 +2,7 @@
 <!-- Главная страница -->
 <html lang="ru">
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body>
@@ -18,10 +19,10 @@
                         </div>
                         <div class="c-top__right">
                             <nav class="c-top-menu">
-                                <ul class="c-top-menu__list">
-                                    <li class="c-top-menu__item"><a href="#">Components</a></li>
-                                    <li class="c-top-menu__item"><a href="#">About</a></li>
-                                    <li class="c-top-menu__item"><a href="#">Contact</a></li>
+                                <ul class="c-top__menu-list">
+                                    <li class="c-top__menu-item"><a class="c-top__menu-link c-top__menu-link_active" href="#">Components</a></li>
+                                    <li class="c-top__menu-item"><a class="c-top__menu-link" href="#">About</a></li>
+                                    <li class="c-top__menu-item"><a class="c-top__menu-link" href="#">Contact</a></li>
                                 </ul>
                             </nav>
                             <div class="c-switcher-color"></div>
@@ -30,10 +31,10 @@
                     <h1 class="c-title">Reusable component library</h1>
                     <nav class="c-main-menu">
                         <ul class="c-main-menu__list">
-                            <li class="c-main-menu__item"><a href="#">All components</a></li>
-                            <li class="c-main-menu__item"><a href="#">Elements</a></li>
-                            <li class="c-main-menu__item"><a href="#">Containers</a></li>
-                            <li class="c-main-menu__item"><a href="#">Templates</a></li>
+                            <li class="c-main-menu__item"><a class="c-main-menu__link c-main-menu__link_active" href="#">All components</a></li>
+                            <li class="c-main-menu__item"><a class="c-main-menu__link" href="#">Elements</a></li>
+                            <li class="c-main-menu__item"><a class="c-main-menu__link" href="#">Containers</a></li>
+                            <li class="c-main-menu__item"><a class="c-main-menu__link" href="#">Templates</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -42,10 +43,10 @@
             <main class="c-preview"></main>
             <footer class="c-footer">
                 <div class="l-container">
-                    <div class="footer__title">About</div>
-                    <div class="footer__text">
+                    <h2 class="c-footer__title">About</h2>
+                    <p class="c-footer__text">
                         This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.
-                    </div>
+                    </p>
                 </div>
             </footer>
         </div>

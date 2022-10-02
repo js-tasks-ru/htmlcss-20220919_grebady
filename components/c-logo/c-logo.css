@@ -1,5 +1,8 @@
 .c-logo {}
-.c-logo__link{}
+.c-logo__link {
+
+}
 .c-logo__image {
     max-width: 110px ;
+    padding: 24px 0;
 }

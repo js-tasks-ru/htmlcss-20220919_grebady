@@ -1,0 +1,27 @@
+.c-main-menu__list {
+    display: flex;
+}
+.c-main-menu__item {
+    display: flex;
+}
+.c-main-menu__link {
+    padding: 2.5rem 0 0.8125rem 0;
+    margin-right: 2.5rem;
+    color: var(--gray-3);
+    transition: ease-in-out color 200ms, ease-in-out border-bottom-color 200ms;
+    text-decoration: none;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.c-main-menu__link:hover, .c-main-menu__link:active {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
+.c-main-menu__link_active {
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
+}
+

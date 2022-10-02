@@ -1,0 +1,20 @@
+.c-footer {}
+.c-footer__title {
+    font-family: Inter, serif;
+    font-size: 2.375rem;
+    font-weight: 500;
+    line-height: 3rem;
+    padding: 4.5rem 0 2rem;
+    text-align: center;
+    color: var(--black);
+}
+
+.c-footer__text {
+    font-family: Inter, serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    max-width: 40rem;
+    margin: auto;
+}

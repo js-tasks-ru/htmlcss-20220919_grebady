@@ -1,3 +1,28 @@
 .c-top {
     display: flex;
+    justify-content: space-between;
+}
+.c-top__left {
+    flex: 1 0 50%;
+}
+.c-top__right {
+    flex: 1 0 50%;
+}
+.c-top__menu-list {
+    display: flex;
+}
+.c-top__menu-item {
+    display: flex;
+}
+.c-top__menu-link {
+    padding: 32px 12px;
+    text-decoration: none;
+    transition: ease-in-out color 200ms;
+    color: var(--gray-3);
+}
+.c-top__menu-link:hover, .c-top__menu-link:active {
+    color: var(--black);
+}
+.c-top__menu-link_active {
+    color: var(--black);
 }
