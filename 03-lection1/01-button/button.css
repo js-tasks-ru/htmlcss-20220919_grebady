@@ -47,14 +47,14 @@
 /* Alternate */
 /*--------------------------------------------------------------------------------------------------------------------*/
 .c-button_alternate {
-    border: 1px solid var(--grey-3);
-    color: var(--grey-4);
+    border: 1px solid var(--gray-3);
+    color: var(--gray-4);
     background: var(--white);
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out, border 200ms ease-in-out;
 }
 
 .c-button_alternate:hover, .c-button_alternate:active {
-    color: var(--grey-4);
+    color: var(--gray-4);
     border: 1px solid var(--black);
 }
 /*--------------------------------------------------------------------------------------------------------------------*/

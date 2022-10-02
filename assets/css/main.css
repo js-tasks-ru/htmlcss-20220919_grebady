@@ -4,6 +4,7 @@
 
 @import "../../components/l-container/l-container.css";
 @import "../../components/l-list/l-list.css";
+@import "../../03-lection1/02-accordion/accordion.css";
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -11,10 +12,10 @@
     --purple: #7048E8;
     --blue: #4263EB;
     --red: #F03D3E;
-    --grey-1: #F8F9FA;
-    --grey-2: #DDE2E5;
-    --grey-3: #ACB5BD;
-    --grey-4: #495057;
+    --gray-1: #F8F9FA;
+    --gray-2: #DDE2E5;
+    --gray-3: #ACB5BD;
+    --gray-4: #495057;
 
     --error: var(--red);
     --success: var(--blue);

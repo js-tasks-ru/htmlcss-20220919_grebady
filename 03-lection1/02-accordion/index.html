@@ -6,13 +6,35 @@
         <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
+    <div class="l-container">
+        <details class="c-accordion l-container__c-accordion" open>
+            <summary class="c-accordion__item">
+                Accordion item 1
+                <img class="c-accordion__image" src="./accordion-arrow.svg" alt="">
             </summary>
-            <p>
+            <p class="c-accordion__full-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+        </details>
+        <details class="c-accordion l-container__c-accordion">
+            <summary class="c-accordion__item">
+                Accordion item 2
+                <img class="c-accordion__image" src="./accordion-arrow.svg" alt="">
+            </summary>
+            <p class="c-accordion__full-text">
                 Hidden content
             </p>
         </details>
+        <details class="c-accordion l-container__c-accordion">
+            <summary class="c-accordion__item">
+                Accordion item 3
+                <img class="c-accordion__image" src="./accordion-arrow.svg" alt="">
+            </summary>
+            <p class="c-accordion__full-text">
+                Hidden content
+            </p>
+        </details>
+    </div>
+
     </body>
 </html>
