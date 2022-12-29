@@ -15,11 +15,9 @@
     margin-bottom: 0.5rem;
     max-width: 32.1875rem;
 }
-
 .c-accordion__item:last-child {
     margin-bottom: 0;
 }
-
 .c-accordion__title {
     list-style: none;
     display: flex;
@@ -28,7 +26,6 @@
     color: var(--black);
     padding: 1.5rem 2rem;
 }
-
 .c-accordion__image {
     max-width: 1.125rem;
     transition: transform ease-in-out 200ms;
@@ -43,7 +40,5 @@
 .c-accordion__content {
     padding: 0 2rem 2rem 2rem;
     color: var(--gray-4);
-
     font-style: normal;
-
 }
