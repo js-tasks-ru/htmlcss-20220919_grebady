@@ -1,0 +1,32 @@
+.c-header {
+
+}
+.c-header__top {
+    display: flex;
+    justify-content: space-between;
+}
+.c-header__left {
+    flex: 1 0 50%;
+}
+.c-header__right {
+    flex: 1 0 50%;
+}
+.c-header__menu-list {
+    display: flex;
+    justify-content: flex-end;
+}
+.c-header__menu-item {
+    display: flex;
+}
+.c-header__menu-link {
+    padding: 32px 12px;
+    text-decoration: none;
+    transition: ease-in-out color 200ms;
+    color: var(--gray-3);
+}
+.c-header__menu-link:hover, .c-header__menu-link:active {
+    color: var(--black);
+}
+.c-header__menu-link_active {
+    color: var(--black);
+}
