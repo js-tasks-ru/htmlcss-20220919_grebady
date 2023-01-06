@@ -1,1 +1,44 @@
 /* Стилизация аккордеона */
+.c-accordion {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.c-accordion__item {
+    background: var(--white);
+    display: flex;
+    border: 0.0625rem solid var(--gray-3);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    max-width: 32.1875rem;
+}
+.c-accordion__item:last-child {
+    margin-bottom: 0;
+}
+.c-accordion__title {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: var(--black);
+    padding: 1.5rem 2rem;
+}
+.c-accordion__image {
+    max-width: 1.125rem;
+    transition: transform ease-in-out 200ms;
+}
+.c-accordion__item[open] .c-accordion__image {
+    transform: rotate(180deg);
+    transition: transform ease-in-out 200ms;
+}
+.c-accordion__item[open] .c-accordion__title {
+    padding: 1.5rem 2rem 1rem;
+}
+.c-accordion__content {
+    padding: 0 2rem 2rem 2rem;
+    color: var(--gray-4);
+    font-style: normal;
+}

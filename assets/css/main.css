@@ -13,6 +13,7 @@
 
 @import "../../components/l-container/l-container.css";
 @import "../../components/l-list/l-list.css";
+@import "../../03-lection1/02-accordion/accordion.css";
 :root {
     --white: #ffffff;
     --black: #212429;
