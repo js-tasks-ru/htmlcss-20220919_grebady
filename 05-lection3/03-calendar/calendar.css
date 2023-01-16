@@ -1,0 +1,61 @@
+.c-calendar {
+    max-width: 304px;
+    background: var(--white);
+    border: 1px solid var(--gray-3);
+    border-radius: 8px;
+    padding: 28px 30px 32px 30px;
+}
+
+.c-calendar__title {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.c-calendar__inner {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.c-calendar__wrapper {
+    position: relative;
+    padding-bottom: 100%;
+    margin-top: 24px;
+}
+
+.c-calendar__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--dark-blue);
+}
+
+.c-calendar__item_day {
+    font-family: 'Inter', serif;
+    color: var(--gray-calendar);
+    font-size: 0.875rem;
+}
+
+.c-calendar__item_period-start, .c-calendar__item_period-end {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.c-calendar__item_period-in {
+    background: rgba(160, 177, 245, 0.2);
+}
