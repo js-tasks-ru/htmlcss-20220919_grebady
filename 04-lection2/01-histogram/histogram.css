@@ -49,7 +49,7 @@
 }
 
 .c-histogram__column {
-    height: 100%;
+    height: 0;
     background: var(--blue);
     flex-grow: 1;
 }
