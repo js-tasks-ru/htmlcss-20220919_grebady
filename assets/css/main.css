@@ -1,19 +1,6 @@
 @import "html5reset-1.6.1.css";
 @import "sanitize.css";
-@import '../fonts/fonts.css';
-@import "../../components/c-logo/c-logo.css";
-@import "../../components/c-page/c-page.css";
-@import "../../components/l-container/l-container.css";
-@import "../../components/c-header/c-header.css";
-@import "../../components/c-title/c-title.css";
-@import "../../components/c-main-menu/c-main-menu.css";
-@import "../../components/c-preview/c-preview.css";
-@import "../../components/c-card/c-card.css";
-@import "../../components/c-footer/c-footer.css";
 
-@import "../../components/l-container/l-container.css";
-@import "../../components/l-list/l-list.css";
-@import "../../03-lection1/02-accordion/accordion.css";
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -35,8 +22,4 @@
     --secondary: var(--purple);
     --primary-hover: #2342C0;
     --secondary-hover: #5028C6;
-}
-
-* {
-    font-family: 'Roboto', sans-serif;
 }
