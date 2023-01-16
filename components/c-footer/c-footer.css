@@ -1,14 +1,16 @@
 .c-footer {
     background: var(--white);
+    color: var(--black);
+    padding: 72px 0 136px;
 }
+
 .c-footer__title {
     font-family: Inter, serif;
     font-size: 2.375rem;
     font-weight: 500;
     line-height: 3rem;
-    padding: 4.5rem 0 2rem;
     text-align: center;
-    color: var(--black);
+    margin-bottom: 2rem;
 }
 
 .c-footer__text {
