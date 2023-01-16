@@ -1,10 +1,66 @@
 <!DOCTYPE html>
+<!-- Внутренняя страница -->
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+  <div class="c-layout">
+    <header class="c-header c-header_inner">
+      <div class="l-container">
+        <div class="c-header__top">
+          <div class="c-header__left">
+            <div class="c-logo">
+              <a class="c-logo__link" href="/">
+                <img class="c-logo__image" src="../components/c-logo/logo.svg" alt="Логотип проекта">
+              </a>
+            </div>
+          </div>
+          <div class="c-header__right">
+            <nav class="c-header__menu">
+              <ul class="c-header__menu-list">
+                <li class="c-header__menu-item"><a class="c-header__menu-link c-header__menu-link_active" href="#">Components</a></li>
+                <li class="c-header__menu-item"><a class="c-header__menu-link" href="#">About</a></li>
+                <li class="c-header__menu-item"><a class="c-header__menu-link" href="#">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="c-switcher-color"></div>
+          </div>
+        </div>
+      </div>
 
+    </header>
+      <div class="c-inner-content c-layout__c-inner-content">
+        <div class="l-container">
+            <div class="c-content">
+                <aside class="c-sidebar">
+                    <h4 class="c-sidebar__title">Components</h4>
+                    <nav class="c-sidebar__menu">
+                        <ul class="c-sidebar__list">
+                            <li class="c-sidebar__list-item"><a class="c-sidebar__link" href="#">Modal</a> </li>
+                            <li class="c-sidebar__list-item"><a class="c-sidebar__link" href="#">Tooltip</a></li>
+                            <li class="c-sidebar__list-item"><a class="c-sidebar__link" href="#">Avatar</a></li>
+                            <li class="c-sidebar__list-item"><a class="c-sidebar__link" href="#">Calendar</a></li>
+                            <li class="c-sidebar__list-item"><a class="c-sidebar__link c-sidebar__link_link" href="#">Histogram</a></li>
+                            <li class="c-sidebar__list-item"><a class="c-sidebar__link" href="#">Custom form elements</a></li>
+                            <li class="c-sidebar__list-item"><a class="c-sidebar__link" href="#">Main page</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                <main class="c-main">
+                    <h3 class="c-main__title">Histogram</h3>
+                </main>
+            </div>
+        </div>
+    </div>
+    <footer class="c-footer c-footer_inner c-footer_background_transparent">
+      <div class="l-container">
+        <p class="c-footer__text">
+            Reusable component library
+        </p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
