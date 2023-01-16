@@ -1,4 +1,6 @@
-.c-footer {}
+.c-footer {
+    background: var(--white);
+}
 .c-footer__title {
     font-family: Inter, serif;
     font-size: 2.375rem;
