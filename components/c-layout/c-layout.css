@@ -1,0 +1,19 @@
+html, body {
+    height: 100vh;
+}
+
+.c-layout {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+            "header"
+            "content"
+            "footer";
+    grid-template-rows: auto 1fr auto;
+    background: var(--backround);
+}
+
+.c-layout__c-inner-content {
+    margin-top: 36px;
+}
+

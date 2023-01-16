@@ -35,3 +35,7 @@
 .c-header__menu-link_active {
     color: var(--black);
 }
+
+.c-header_inner {
+    grid-area: header;
+}

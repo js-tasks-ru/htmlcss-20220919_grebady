@@ -21,3 +21,13 @@
     max-width: 40rem;
     margin: auto;
 }
+
+.c-footer_inner {
+    grid-area: footer;
+    padding: 56px 0;
+}
+
+.c-footer_background_transparent {
+    background: transparent;
+    color: var(--gray-3);
+}
