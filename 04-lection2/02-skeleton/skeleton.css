@@ -1,7 +1,7 @@
 .c-skeleton {
     display: flex;
     flex-direction: column;
-    padding: 24px 40px 24px 24px;
+    padding: 24px 40px 32px 24px;
     border: 1px solid var(--gray-3);
     border-radius: 8px;
 }
@@ -31,12 +31,11 @@
 }
 
 .c-skeleton__content {
-    height: 64px;
-    margin-top: 16px;
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    justify-content: space-evenly;
+    gap: 8px;
 }
 
 .c-skeleton__line_small {
