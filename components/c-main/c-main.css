@@ -14,3 +14,7 @@
     line-height: 2.375rem;
     color: var(--gray-4);
 }
+
+.c-main__c-histogram {
+    margin-top: 24px;
+}
