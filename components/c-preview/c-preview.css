@@ -1,3 +1,12 @@
 .c-preview {
     background: var(--backround);
+    padding: 4.25rem 0 12.75rem;
 }
+
+.c-preview__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
