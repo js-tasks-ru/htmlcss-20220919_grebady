@@ -1,5 +1,5 @@
 .c-header {
-
+    background: var(--white);
 }
 .c-header__top {
     display: flex;
