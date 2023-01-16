@@ -2,10 +2,30 @@
 <!-- Страница со скелетоном -->
 <html lang="ru">
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./skeleton.css">
+        <style>
+            .c-skeleton {
+                margin-top: 20px;
+                margin-left: 20px;
+                width: 579px;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="c-skeleton">
+            <div class="c-skeleton__header">
+                <div class="c-skeleton__circle"></div>
+                <div class="c-skeleton__lines">
+                    <div class="c-skeleton__line c-skeleton__line_small"></div>
+                    <div class="c-skeleton__line c-skeleton__line_medium"></div>
+                </div>
+            </div>
+            <div class="c-skeleton__content">
+                <div class="c-skeleton__line"></div>
+                <div class="c-skeleton__line"></div>
+            </div>
+        </div>
     </body>
 </html>
