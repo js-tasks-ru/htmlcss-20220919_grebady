@@ -1,0 +1,7 @@
+.c-content {
+    display: grid;
+    grid-template-areas:
+            "sidebar main";
+    grid-template-columns: auto 1fr;
+    background: var(--backround);
+}
