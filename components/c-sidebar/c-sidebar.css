@@ -1,5 +1,4 @@
 .c-sidebar {
-    grid-area: sidebar;
     width: 290px;
 }
 
@@ -21,7 +20,7 @@
     text-decoration: none;
 }
 
-.c-sidebar__link_link {
+.c-sidebar__link_current-link {
     color: var(--orange);
 }
 

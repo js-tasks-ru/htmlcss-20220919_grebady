@@ -5,3 +5,11 @@
     grid-template-columns: auto 1fr;
     background: var(--backround);
 }
+
+.c-content__sidebar {
+    grid-area: sidebar;
+}
+
+.c-content__main {
+    grid-area: main;
+}
