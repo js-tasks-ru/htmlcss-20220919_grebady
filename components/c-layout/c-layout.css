@@ -9,7 +9,18 @@
     background: var(--backround);
 }
 
-.c-layout__c-inner-content {
+.c-layout__header {
+    grid-area: header;
+}
+
+.c-layout__content {
+    grid-area: content;
     margin-top: 36px;
 }
+
+.c-layout__footer {
+    grid-area: footer;
+}
+
+
 
