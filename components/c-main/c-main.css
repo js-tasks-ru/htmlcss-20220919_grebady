@@ -1,0 +1,19 @@
+.c-main {
+    background: var(--white);
+    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+    padding: 32px 32px 32px 48px;
+}
+
+.c-main__title {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+    color: var(--gray-4);
+}
+
+.c-main__component-view {
+    margin-top: 24px;
+}

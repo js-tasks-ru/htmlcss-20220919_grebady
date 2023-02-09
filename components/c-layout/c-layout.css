@@ -1,0 +1,26 @@
+.c-layout {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+            "header"
+            "content"
+            "footer";
+    grid-template-rows: auto 1fr auto;
+    background: var(--backround);
+}
+
+.c-layout__header {
+    grid-area: header;
+}
+
+.c-layout__content {
+    grid-area: content;
+    margin-top: 36px;
+}
+
+.c-layout__footer {
+    grid-area: footer;
+}
+
+
+

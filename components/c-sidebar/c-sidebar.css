@@ -1,0 +1,38 @@
+.c-sidebar {
+    width: 290px;
+}
+
+.c-sidebar__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-decoration: none;
+    margin-top: 16px;
+}
+
+.c-sidebar__link {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.c-sidebar__link_current-link {
+    color: var(--orange);
+}
+
+.c-sidebar__link:active, .c-sidebar__link:hover {
+    color: var(--orange);
+}
+
+.c-sidebar__title {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    color: #000;
+}
