@@ -35,3 +35,15 @@
 .c-header__menu-link_active {
     color: var(--black);
 }
+
+@media screen and (max-width: 375px){
+    .c-header {
+        padding: 0 16px;
+    }
+    .c-header__top {
+        text-align: center;
+    }
+    .c-header__right {
+        display: none;
+    }
+}

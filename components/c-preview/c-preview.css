@@ -9,4 +9,15 @@
     gap: 30px;
 }
 
+@media screen and (max-width: 375px) {
+    .c-preview {
+        padding: 1.3125rem 0.9375rem 3rem 0.9375rem;
+    }
+    .c-preview__cards {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, minmax(130px, 1fr));
+    }
+}
+
 
