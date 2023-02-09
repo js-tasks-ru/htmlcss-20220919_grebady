@@ -44,6 +44,10 @@
     border-top: 6px solid var(--blue);
 }
 
+.c-tooltip__helper_visible {
+    opacity: 1;
+}
+
 /* Выбираем соседа снизу */
 .c-tooltip__trigger:hover ~ .c-tooltip__helper {
     opacity: 1;
