@@ -36,3 +36,9 @@
     line-height: 1.625rem;
     color: #000;
 }
+
+@media screen and (max-width: 375px) {
+    .c-sidebar {
+        display: none;
+    }
+}
