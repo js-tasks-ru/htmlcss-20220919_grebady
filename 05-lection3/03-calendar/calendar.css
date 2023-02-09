@@ -6,6 +6,24 @@
     padding: 28px 30px 32px 30px;
 }
 
+.c-calendar_preview {
+    padding: 16px 16px 0;
+    max-width: 202px;
+    width: 100%;
+}
+
+.c-calendar_preview .c-calendar__title {
+    font-size: 1rem;
+}
+
+.c-calendar_preview .c-calendar__wrapper {
+    margin-top: 16px;
+}
+
+.c-calendar_preview .c-calendar__item {
+    font-size: 0.6875rem;
+}
+
 .c-calendar__title {
     font-family: 'Inter', serif;
     font-style: normal;
@@ -43,6 +61,7 @@
     font-size: 1rem;
     line-height: 1.25rem;
     color: var(--dark-blue);
+    white-space: nowrap;
 }
 
 .c-calendar__item_day {
@@ -59,3 +78,36 @@
 .c-calendar__item_period-in {
     background: rgba(160, 177, 245, 0.2);
 }
+
+@media screen and (max-width: 375px) {
+    .c-calendar_preview {
+        padding: 5px;
+        border: 0;
+        width: 90%;
+        height: 90%;
+    }
+
+    .c-calendar_preview .c-calendar__title {
+        font-size: .75rem;
+    }
+
+    .c-calendar_preview .c-calendar__item {
+        font-size: 0.6875rem;
+        line-height: 0.75rem;
+        font-weight: 300;
+    }
+
+    .c-calendar_preview .c-calendar__item_day {
+        font-size: 0.5625rem;
+    }
+
+    .c-calendar_preview .c-calendar__inner {
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .c-calendar_preview .c-calendar__wrapper {
+        margin-top: 0;
+    }
+}
+
+
