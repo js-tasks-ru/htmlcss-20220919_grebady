@@ -1,4 +1,5 @@
 .c-histogram {
+    width: 100%;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--gray-3);
@@ -52,4 +53,29 @@
     height: 0;
     background: var(--blue);
     flex-grow: 1;
+}
+
+@media screen and (max-width: 375px) {
+    .c-histogram {
+        padding: 10px;
+    }
+    .c-histogram__title {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+    .c-histogram__link {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        margin-top: 0;
+    }
+    .c-histogram__subtitle {
+        font-size: 0.825rem;
+        line-height: 1rem;
+        font-weight: 600;
+    }
+    .c-histogram__chart {
+        height: 30px;
+        margin-top: 10px;
+    }
+
 }
