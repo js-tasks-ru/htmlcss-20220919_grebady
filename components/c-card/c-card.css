@@ -24,9 +24,12 @@
 .c-card__component {
     display: flex;
     height: 100%;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.c-card__c-histogram {
+    flex-grow: 1;
 }
 
 @media screen and (max-width: 375px) {
