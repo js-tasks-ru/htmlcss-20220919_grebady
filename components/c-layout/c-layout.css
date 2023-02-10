@@ -22,5 +22,11 @@
     grid-area: footer;
 }
 
+@media screen and (max-width: 375px) {
+    .c-layout {
+        background: var(--white);
+    }
+}
+
 
 
