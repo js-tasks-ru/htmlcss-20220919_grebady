@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="arrow">
+            <path fill="none" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M17,9L9,1L1,9"/>
+        </symbol>
+    </defs>
+</svg>

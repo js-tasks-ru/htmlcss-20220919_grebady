@@ -27,6 +27,7 @@
 }
 .c-accordion__image {
     max-width: 1.125rem;
+    aspect-ratio: 3 / 4;
     transition: transform ease-in-out 200ms;
 }
 .c-accordion__item[open] .c-accordion__image {
