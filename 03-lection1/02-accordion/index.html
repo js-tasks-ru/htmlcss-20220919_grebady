@@ -2,8 +2,10 @@
 <!-- Страница с аккордеоном -->
 <html lang="ru">
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
+        <link rel="stylesheet" href="../../assets/fonts/Inter.css">
         <style>
             .c-block-preview {
                 max-width: 32.1875rem;
@@ -15,7 +17,9 @@
         <details class="c-accordion__item" open>
             <summary class="c-accordion__title">
                 Accordion item 1
-                <img class="c-accordion__image" src="./accordion-arrow.svg" alt="">
+                <svg class="c-accordion__image">
+                    <use href="../../assets/images/icons-sprite.svg#arrow"></use>
+                </svg>
             </summary>
             <div class="c-accordion__content">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
@@ -24,7 +28,9 @@
         <details class="c-accordion__item">
             <summary class="c-accordion__title">
                 Accordion item 2
-                <img class="c-accordion__image" src="./accordion-arrow.svg" alt="">
+                <svg class="c-accordion__image">
+                    <use href="../../assets/images/icons-sprite.svg#arrow"></use>
+                </svg>
             </summary>
             <div class="c-accordion__content">
                 Hidden content
@@ -33,7 +39,9 @@
         <details class="c-accordion__item">
             <summary class="c-accordion__title">
                 Accordion item 3
-                <img class="c-accordion__image" src="./accordion-arrow.svg" alt="">
+                <svg class="c-accordion__image">
+                    <use href="../../assets/images/icons-sprite.svg#arrow"></use>
+                </svg>
             </summary>
             <div class="c-accordion__content">
                 Hidden content
