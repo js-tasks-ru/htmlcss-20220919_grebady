@@ -5,19 +5,19 @@
     width: 100vw;
 }
 
-@media screen and (min-width: 480px) and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
     .c-background-image {
         background-image: url(./public/forest_1024.jpg);
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 479px) {
+@media screen and (max-width: 768px) {
     .c-background-image {
         background-image: url(./public/forest_768.jpg);
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .c-background-image {
         background-image: url(./public/forest_400.jpg);
     }
