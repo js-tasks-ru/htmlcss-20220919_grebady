@@ -1,0 +1,8 @@
+.c-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.c-icon__white {
+    color: var(--white);
+}
