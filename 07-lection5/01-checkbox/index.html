@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="../../assets/fonts/Inter.css">
+        <link rel="stylesheet" href="../../components/c-icon/c-icon.css">
         <link rel="stylesheet" href="./checkbox.css">
         <style>
             .group-control {
@@ -17,6 +18,59 @@
         </style>
     </head>
     <body>
-
+        <main class="group-control">
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input">
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <div class="checkbox__icon">
+                            <svg class="c-icon c-icon__white">
+                                <use href="../../assets/images/icons-sprite.svg#check"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="checkbox__title">Default</div>
+                </div>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" checked>
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <div class="checkbox__icon">
+                            <svg class="c-icon c-icon__white">
+                                <use href="../../assets/images/icons-sprite.svg#check"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="checkbox__title">Checked</div>
+                </div>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" disabled>
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <div class="checkbox__icon">
+                            <svg class="c-icon c-icon__white">
+                                <use href="../../assets/images/icons-sprite.svg#check"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="checkbox__title">Disabled</div>
+                </div>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__input" disabled checked>
+                <div class="checkbox__state">
+                    <div class="checkbox__control">
+                        <div class="checkbox__icon">
+                            <svg class="c-icon c-icon__white">
+                                <use href="../../assets/images/icons-sprite.svg#check"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="checkbox__title">Disabled and Checked</div>
+                </div>
+            </label>
+        </main>
     </body>
 </html>
