@@ -1,0 +1,89 @@
+.checkbox {
+    display: inline-block;
+    position: relative;
+}
+
+.checkbox__input {
+    position: absolute;
+    /* Обнулили размеры */
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.checkbox__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.checkbox__icon {
+    display: none;
+}
+
+.checkbox__control {
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* В невыбранном состоянии без фокуса у checkbox серая рамка*/
+.checkbox__input:not(:checked) ~ .checkbox__state .checkbox__control {
+    border: 1px solid var(--gray-2);
+}
+
+.checkbox__title {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray-4);
+}
+
+/***************** Чекбокс при наведении ******************/
+/* Чекбокс при наведении становится синим */
+.checkbox__input:checked ~ .checkbox__state .checkbox__control {
+    background: var(--blue);
+}
+
+/* Чекбокс при наведении с галкой */
+.checkbox__input:checked ~ .checkbox__state .checkbox__icon {
+    display: block;
+}
+/************************************************/
+
+
+
+/**************** Чекбокс в состоянии Focus, hover ********************/
+
+/* Чекбокс при фокусе и наведении - с синей рамкой */
+.checkbox__input:focus ~ .checkbox__state .checkbox__control,
+.checkbox__input:not(:disabled):hover ~ .checkbox__state .checkbox__control {
+    border: 1px solid var(--blue);
+    box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
+}
+/* Чекбокс одновременно выбран и в фокусе*/
+.checkbox__input:focus:checked ~ .checkbox__state .checkbox__control,
+.checkbox__input:not(:disabled):hover:checked ~ .checkbox__state .checkbox__control{
+    box-shadow: 0 0 0 0.25rem rgb(0 123 255 / 25%)
+}
+/****************************************************************************/
+
+
+
+/********************** Disabled чекбокс **********************/
+
+/* Курсор на disabled чекбоксе красный*/
+.checkbox__input:disabled ~ .checkbox__state {
+    cursor: not-allowed;
+}
+/* При состоянии disabled чекбокс становится серым */
+.checkbox__input:disabled ~ .checkbox__state .checkbox__control {
+    background: var(--gray-2);
+}
+/****************************************************************/
