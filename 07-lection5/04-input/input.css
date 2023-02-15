@@ -1,0 +1,74 @@
+.form-group {
+    position: relative;
+}
+
+.form-group__label {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--gray-3);
+    cursor: pointer;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.form-group__input {
+    background: var(--white);
+    border: 1px solid var(--gray-2);
+    border-radius: 0.5rem;
+    line-height: 1.625rem;
+    padding: 1.0625rem 1.5rem 0.8125rem 1.5rem;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--gray-4);
+
+}
+
+.form-group__input::placeholder {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--gray-2);
+}
+
+.form-group__invalid .form-group__input {
+    border: 1px solid var(--red);
+}
+
+.form-group__input:focus {
+    border: 1px solid var(--blue);
+    outline: none;
+    box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
+}
+
+.form-group__input:disabled {
+    background: var(--gray-1);
+    color: var(--gray-3);
+}
+
+.form-group__input:disabled ~ .form-group__label {
+    cursor: not-allowed;
+}
+
+.form-group__icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.0625rem;
+}
+
+.form-group__success .form-group__icon {
+    color: var(--blue);
+}
+
+.form-group__invalid .form-group__icon {
+    color: var(--red);
+}
