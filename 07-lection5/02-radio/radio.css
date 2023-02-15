@@ -1,0 +1,111 @@
+.radio {
+    display: inline-block;
+    position: relative;
+}
+
+.radio__input {
+    position: absolute;
+    /* Обнулили размеры */
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.radio__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.radio__icon {
+    display: none;
+}
+
+.radio__control {
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* В невыбранном состоянии без фокуса у radio серая рамка*/
+.radio__input:not(:checked) ~ .radio__state .radio__control {
+    border: 2px solid var(--gray-2);
+}
+
+.radio__title {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray-4);
+}
+
+/***************** Radio checked ******************/
+/* Синяя рамка */
+.radio__input:checked ~ .radio__state .radio__control {
+    border: 2px solid var(--blue);
+}
+
+/* Синий кружочек внутри  */
+.radio__input:checked ~ .radio__state .radio__icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: var(--blue);
+    border-radius: 50%
+}
+/************************************************/
+
+
+
+/**************** радио в состоянии hover ********************/
+
+/* Синяя рамка при наведении на невыбранный и незаблокированный radio */
+.radio__input:not(:disabled):hover ~ .radio__state .radio__control {
+    border: 2px solid var(--blue);
+    box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
+}
+
+/* радио одновременно выбран и наведена мышь*/
+.radio__input:not(:disabled):hover:checked ~ .radio__state .radio__control{
+    box-shadow: 0 0 0 0.25rem rgb(0 123 255 / 25%)
+}
+/****************************************************************************/
+
+
+
+/********************** Disabled радио **********************/
+
+/* Курсор на disabled радио  красный*/
+.radio__input:disabled ~ .radio__state {
+    cursor: not-allowed;
+}
+/* При состоянии disabled радио становится серым */
+.radio__input:disabled ~ .radio__state .radio__control {
+    background: var(--gray-2);
+}
+
+/************************************************************/
+
+/************** Disabled and checked ************************/
+
+/* Серый кружочек */
+.radio__input:disabled ~ .radio__state .radio__icon {
+    background: var(--gray-2);
+}
+
+/* Белый фон между кружочком и рамкой */
+.radio__input:disabled:checked ~ .radio__state .radio__control {
+    background: var(--white);
+}
+
+/* Серая рамка */
+.radio__input:disabled:checked ~ .radio__state .radio__control {
+    border: 2px solid var(--gray-2);
+}
+/****************************************************************/
