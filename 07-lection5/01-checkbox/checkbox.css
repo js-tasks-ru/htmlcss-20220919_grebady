@@ -46,12 +46,12 @@
 }
 
 /***************** Чекбокс при наведении ******************/
-/* Чекбокс при наведении становится синим */
+/* Чекбокс в состоянии checked становится синим */
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
     background: var(--blue);
 }
 
-/* Чекбокс при наведении с галкой */
+/* Чекбокс в состоянии checked отображается с иконкой "галочка" */
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
     display: block;
 }
@@ -61,13 +61,13 @@
 
 /**************** Чекбокс в состоянии Focus, hover ********************/
 
-/* Чекбокс при фокусе и наведении - с синей рамкой */
+/* Чекбокс в фокусе или при наведении - с синей рамкой */
 .checkbox__input:focus ~ .checkbox__state .checkbox__control,
 .checkbox__input:not(:disabled):hover ~ .checkbox__state .checkbox__control {
     border: 1px solid var(--blue);
     box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
 }
-/* Чекбокс одновременно выбран и в фокусе*/
+/* Чекбокс одновременно выбран и в фокусе - более пышная рамка*/
 .checkbox__input:focus:checked ~ .checkbox__state .checkbox__control,
 .checkbox__input:not(:disabled):hover:checked ~ .checkbox__state .checkbox__control{
     box-shadow: 0 0 0 0.25rem rgb(0 123 255 / 25%)
