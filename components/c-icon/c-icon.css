@@ -3,6 +3,6 @@
     height: 1.5rem;
 }
 
-.c-icon__white {
+.c-icon_checkbox-default {
     color: var(--white);
 }
