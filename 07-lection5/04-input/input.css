@@ -40,7 +40,7 @@
     color: var(--gray-2);
 }
 
-.form-group__invalid .form-group__input {
+.form-group_invalid .form-group__input {
     border: 1px solid var(--red);
 }
 
@@ -65,10 +65,10 @@
     top: 1.0625rem;
 }
 
-.form-group__success .form-group__icon {
+.form-group_success .form-group__icon {
     color: var(--blue);
 }
 
-.form-group__invalid .form-group__icon {
+.form-group_invalid .form-group__icon {
     color: var(--red);
 }
