@@ -1,0 +1,114 @@
+.toggler {
+    display: inline-block;
+    position: relative;
+}
+
+.toggler__input {
+    position: absolute;
+    /* Обнулили размеры */
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.toggler__state {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+/* Серый кружочек внутри  */
+.toggler__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: var(--gray-2);
+    border-radius: 50%;
+}
+
+.toggler__control {
+    width: 52px;
+    height: 28px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1px;
+    border-radius: 16px;
+}
+
+/* В невыбранном состоянии без фокуса у toggler серая рамка*/
+.toggler__input:not(:checked) ~ .toggler__state .toggler__control {
+    border: 1px solid var(--gray-2);
+}
+
+.toggler__title {
+    font-family: Inter, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray-4);
+    border-bottom: 1px solid transparent;  /* Текст при подчеркивании не смещается */
+}
+
+/***************** Toggler в состоянии checked ******************/
+/* Чекбокс в состоянии checked кружочек смещается вправо */
+.toggler__input:checked ~ .toggler__state .toggler__control {
+    justify-content: end;
+}
+
+/* Если не disabled - горит синим. Рамка нужна для отступа*/
+.toggler__input:not(:disabled):checked ~ .toggler__state .toggler__control {
+    border: 1px solid var(--blue);
+    background: var(--blue);
+}
+
+/* Кружочек белый */
+.toggler__input:not(:disabled):checked ~ .toggler__state .toggler__icon {
+    background: var(--white);
+}
+/************************************************/
+
+
+
+/**************** Toggler в состоянии Focus, hover ********************/
+
+/* Toggler в фокусе или при наведении - с тенью над рамкой */
+.toggler__input:focus ~ .toggler__state .toggler__control,
+.toggler__input:not(:disabled):hover ~ .toggler__state .toggler__control {
+    box-shadow: 0 0 0 0.25rem rgba(221, 226, 229, 0.25); /* gray-2 */
+}
+
+/* Текст в toggler при наведении или фокусе подчеркивается */
+.toggler__input:focus ~ .toggler__state .toggler__title,
+.toggler__input:not(:disabled):hover ~ .toggler__state .toggler__title {
+    border-bottom: 1px solid var(--blue);
+}
+
+/* Toggler одновременно выбран и в фокусе или наведен и в фокусе - более пышная рамка*/
+.toggler__input:focus:checked ~ .toggler__state .toggler__control,
+.toggler__input:not(:disabled):hover:checked ~ .toggler__state .toggler__control{
+    box-shadow: 0 0 0 0.25rem rgb(0 123 255 / 25%)
+}
+/****************************************************************************/
+
+
+
+/********************** Disabled Toggler **********************/
+
+/* Курсор на disabled чекбоксе красный*/
+.toggler__input:disabled ~ .toggler__state {
+    cursor: not-allowed;
+}
+/* При состоянии disabled чекбокс становится серым */
+.toggler__input:disabled ~ .toggler__state .toggler__control {
+    background: var(--gray-2);
+    border: 1px solid var(--gray-2);
+}
+
+/* А кружочек ещё на тон темнее*/
+.toggler__input:disabled ~ .toggler__state .toggler__icon {
+    background: var(--gray-3);
+}
+/****************************************************************/
