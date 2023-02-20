@@ -3,6 +3,17 @@
     position: relative;
 }
 
+.toggler_dark-mode {
+    width: 100%;
+}
+
+.toggler_dark-mode .toggler__state {
+    justify-content: space-between;
+    padding: 28px 0 24px;
+    border-top: 1px solid var(--gray-2);
+    border-bottom: 1px solid var(--gray-2);
+}
+
 .toggler__input {
     position: absolute;
     /* Обнулили размеры */
