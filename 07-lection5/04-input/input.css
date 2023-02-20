@@ -10,7 +10,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--gray-3);
-    cursor: pointer;
 }
 
 .form-group__input-wrapper {
@@ -49,10 +48,6 @@
 .form-group__input:disabled {
     background: var(--gray-1);
     color: var(--gray-3);
-}
-
-.form-group_disabled .form-group__label {
-    cursor: not-allowed;
 }
 
 .form-group__icon {
