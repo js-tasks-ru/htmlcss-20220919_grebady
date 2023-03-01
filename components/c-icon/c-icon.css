@@ -6,10 +6,7 @@
     color: var(--white);
 }
 
-.c-icon_close-mobile-menu {
-    background: var(--gray-2);
-    border-radius: 50%;
-    padding: 4px;
+.c-icon_large {
     width: 32px;
     height: 32px;
 }
