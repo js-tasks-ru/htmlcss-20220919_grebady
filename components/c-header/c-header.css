@@ -4,6 +4,7 @@
 .c-header__top {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .c-header__left {
     flex: 1 0 50%;
@@ -36,6 +37,24 @@
     color: var(--black);
 }
 
+.c-header__burger-menu-toggle {
+    display: inline-flex;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    cursor: pointer;
+    color: var(--black);
+    transform: translate(0, -50%);
+    background: var(--backround);
+    border: none;
+}
+
+.c-header__burger-menu-close {
+    background: var(--gray-2);
+    border-radius: 50%;
+    padding: 4px;
+}
+
 @media screen and (max-width: 375px){
     .c-header {
         padding: 0 16px;
@@ -44,6 +63,12 @@
         text-align: center;
     }
     .c-header__right {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .c-header__burger-menu-toggle {
         display: none;
     }
 }

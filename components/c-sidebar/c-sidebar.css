@@ -37,8 +37,30 @@
     color: #000;
 }
 
+.c-sidebar_mobile .c-sidebar__title {
+    color: var(--gray-3);
+}
+
+.c-sidebar_mobile .c-sidebar__list {
+    gap: 16px;
+}
+
+.c-sidebar_mobile {
+    margin-top: 24px;
+}
+
+.c-sidebar_mobile .c-sidebar__link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
 @media screen and (max-width: 375px) {
     .c-sidebar {
         display: none;
+    }
+    .c-sidebar_mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
     }
 }
