@@ -35,7 +35,7 @@
     color: var(--gray-2);
 }
 
-.form-group__input:focus {
+.form-group__input:focus, .form-group_success .form-group__input {
     border-color: var(--blue);
     outline: none;
     box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
