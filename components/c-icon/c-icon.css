@@ -2,7 +2,11 @@
     width: 1.5rem;
     height: 1.5rem;
 }
-
 .c-icon_checkbox-default {
     color: var(--white);
+}
+
+.c-icon_large {
+    width: 32px;
+    height: 32px;
 }

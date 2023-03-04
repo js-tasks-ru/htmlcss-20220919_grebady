@@ -2,10 +2,67 @@
 <!-- Страница с кнопкой переключения -->
 <html lang="ru">
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../assets/fonts/Inter.css">
         <link rel="stylesheet" href="./toggler.css">
-    </head>
-    <body>
+        <link rel="stylesheet" href="../../components/c-icon/c-icon.css">
 
+    </head>
+    <style >
+        .group-control {
+            margin-top: 30px;
+            margin-left: 30px;
+            display: inline-flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    </style>
+    <body>
+        <form class="group-control">
+        <label class="toggler">
+            <input type="checkbox" class="toggler__input">
+            <div class="toggler__state">
+                <div class="toggler__control">
+                    <div class="toggler__icon">
+                    </div>
+                </div>
+                <div class="toggler__title">Off</div>
+            </div>
+        </label>
+        <label class="toggler">
+            <input type="checkbox" class="toggler__input" checked>
+            <div class="toggler__state">
+                <div class="toggler__control">
+                    <div class="toggler__icon">
+
+                    </div>
+                </div>
+                <div class="toggler__title">On</div>
+            </div>
+        </label>
+        <label class="toggler">
+            <input type="checkbox" class="toggler__input" disabled>
+            <div class="toggler__state">
+                <div class="toggler__control">
+                    <div class="toggler__icon">
+
+                    </div>
+                </div>
+                <div class="toggler__title">Disabled</div>
+            </div>
+        </label>
+        <label class="toggler">
+            <input type="checkbox" class="toggler__input" disabled checked>
+            <div class="toggler__state">
+                <div class="toggler__control">
+                    <div class="toggler__icon">
+
+                    </div>
+                </div>
+                <div class="toggler__title">Disabled and Checked</div>
+            </div>
+        </label>
+    </form>
     </body>
 </html>

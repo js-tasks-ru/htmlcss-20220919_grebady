@@ -1,0 +1,22 @@
+.burger-menu {
+    position: fixed;
+    padding: 0 16px;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100vw);
+    transition: transform 250ms linear;
+    background: var(--backround);
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.burger-menu[data-open] {
+    transform: translateX(0);
+}
+
+.burger-menu__header {
+    position: relative;
+}
