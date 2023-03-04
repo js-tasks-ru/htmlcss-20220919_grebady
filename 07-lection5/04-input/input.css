@@ -57,12 +57,12 @@
     top: 1.0625rem;
 }
 
-.form-group__icon_success {
+.form-group_success .form-group__icon_success {
     display: block;
     color: var(--blue);
 }
 
-.form-group__icon_invalid {
+.form-group_invalid .form-group__icon_invalid {
     display: block;
     color: var(--red);
 }
